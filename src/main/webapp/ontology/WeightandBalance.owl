@@ -1,0 +1,531 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#" xml:base="http://websemantic.net/2013/WB" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" ontologyIRI="http://websemantic.net/2013/WB">
+  <Prefix name="" IRI="http://websemantic.net/2013/WB" />
+  <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#" />
+  <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#" />
+  <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace" />
+  <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#" />
+  <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#" />
+  <Declaration>
+    <Class IRI="#Aircraft" />
+  </Declaration>
+  <Declaration>
+    <Class IRI="#AircraftType" />
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Compartment" />
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Limit" />
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Result" />
+  </Declaration>
+  <Declaration>
+    <Class IRI="#TailNumber" />
+  </Declaration>
+  <Declaration>
+    <ObjectProperty IRI="#HasLimit" />
+  </Declaration>
+  <Declaration>
+    <ObjectProperty IRI="#HasResult" />
+  </Declaration>
+  <Declaration>
+    <ObjectProperty IRI="#isHoldOf" />
+  </Declaration>
+  <Declaration>
+    <ObjectProperty IRI="#isTypeOf" />
+  </Declaration>
+  <Declaration>
+    <ObjectProperty IRI="#isZoneOf" />
+  </Declaration>
+  <Declaration>
+    <DataProperty IRI="#hasMaxWeight" />
+  </Declaration>
+  <Declaration>
+    <DataProperty IRI="#hasResult" />
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#False" />
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Hold1" />
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Hold2" />
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Hold3" />
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Hold4" />
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Hold5" />
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#True" />
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#abc" />
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#abcddd" />
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#eeee" />
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#lllll" />
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#rrrrrr" />
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#1365" />
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#1400" />
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#343" />
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#45" />
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#456456" />
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#5989" />
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#9898989" />
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#AGG/A321-204-ATLJET" />
+  </Declaration>
+  <SubClassOf>
+    <Class IRI="#AircraftType" />
+    <Class IRI="#Aircraft" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="#Compartment" />
+    <Class IRI="#Aircraft" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="#Limit" />
+    <Class IRI="#Aircraft" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="#Result" />
+    <Class IRI="#Aircraft" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="#TailNumber" />
+    <Class IRI="#Aircraft" />
+  </SubClassOf>
+  <ClassAssertion>
+    <Class IRI="#Result" />
+    <NamedIndividual IRI="#False" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Aircraft" />
+    <NamedIndividual IRI="#Hold1" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Compartment" />
+    <NamedIndividual IRI="#Hold1" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Compartment" />
+    <NamedIndividual IRI="#Hold2" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Compartment" />
+    <NamedIndividual IRI="#Hold3" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Compartment" />
+    <NamedIndividual IRI="#Hold4" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Compartment" />
+    <NamedIndividual IRI="#Hold5" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Result" />
+    <NamedIndividual IRI="#True" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#TailNumber" />
+    <NamedIndividual IRI="#abc" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#TailNumber" />
+    <NamedIndividual IRI="#abcddd" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#TailNumber" />
+    <NamedIndividual IRI="#eeee" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#TailNumber" />
+    <NamedIndividual IRI="#lllll" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#TailNumber" />
+    <NamedIndividual IRI="#rrrrrr" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Limit" />
+    <NamedIndividual IRI="#1365" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Limit" />
+    <NamedIndividual IRI="#1400" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Limit" />
+    <NamedIndividual IRI="#343" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Limit" />
+    <NamedIndividual IRI="#45" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#TailNumber" />
+    <NamedIndividual IRI="#45" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Limit" />
+    <NamedIndividual IRI="#456456" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Limit" />
+    <NamedIndividual IRI="#5989" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Limit" />
+    <NamedIndividual IRI="#9898989" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#TailNumber" />
+    <NamedIndividual IRI="#AGG/A321-204-ATLJET" />
+  </ClassAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#isHoldOf" />
+    <NamedIndividual IRI="#Hold1" />
+    <NamedIndividual IRI="#lllll" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#isHoldOf" />
+    <NamedIndividual IRI="#Hold1" />
+    <NamedIndividual IRI="#rrrrrr" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#isHoldOf" />
+    <NamedIndividual IRI="#Hold1" />
+    <NamedIndividual IRI="#AGG/A321-204-ATLJET" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#HasLimit" />
+    <NamedIndividual IRI="#abc" />
+    <NamedIndividual IRI="#343" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#HasLimit" />
+    <NamedIndividual IRI="#abcddd" />
+    <NamedIndividual IRI="#5989" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#HasLimit" />
+    <NamedIndividual IRI="#eeee" />
+    <NamedIndividual IRI="#1400" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#HasLimit" />
+    <NamedIndividual IRI="#lllll" />
+    <NamedIndividual IRI="#456456" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#HasLimit" />
+    <NamedIndividual IRI="#rrrrrr" />
+    <NamedIndividual IRI="#9898989" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#isHoldOf" />
+    <NamedIndividual IRI="#rrrrrr" />
+    <NamedIndividual IRI="#Hold1" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#HasLimit" />
+    <NamedIndividual IRI="#45" />
+    <NamedIndividual IRI="#45" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#HasLimit" />
+    <NamedIndividual IRI="#AGG/A321-204-ATLJET" />
+    <NamedIndividual IRI="#1365" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#isHoldOf" />
+    <NamedIndividual IRI="#AGG/A321-204-ATLJET" />
+    <NamedIndividual IRI="#Hold1" />
+  </ObjectPropertyAssertion>
+  <DataPropertyAssertion>
+    <DataProperty IRI="#hasMaxWeight" />
+    <NamedIndividual IRI="#Hold1" />
+    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1365.0</Literal>
+  </DataPropertyAssertion>
+  <SubObjectPropertyOf>
+    <ObjectProperty IRI="#HasLimit" />
+    <ObjectProperty abbreviatedIRI="owl:topObjectProperty" />
+  </SubObjectPropertyOf>
+  <SubObjectPropertyOf>
+    <ObjectProperty IRI="#HasResult" />
+    <ObjectProperty abbreviatedIRI="owl:topObjectProperty" />
+  </SubObjectPropertyOf>
+  <SubObjectPropertyOf>
+    <ObjectProperty IRI="#isHoldOf" />
+    <ObjectProperty abbreviatedIRI="owl:topObjectProperty" />
+  </SubObjectPropertyOf>
+  <SubObjectPropertyOf>
+    <ObjectProperty IRI="#isTypeOf" />
+    <ObjectProperty abbreviatedIRI="owl:topObjectProperty" />
+  </SubObjectPropertyOf>
+  <ObjectPropertyRange>
+    <ObjectProperty IRI="#HasLimit" />
+    <Class IRI="#Limit" />
+  </ObjectPropertyRange>
+  <ObjectPropertyRange>
+    <ObjectProperty IRI="#HasResult" />
+    <Class IRI="#Result" />
+  </ObjectPropertyRange>
+  <ObjectPropertyRange>
+    <ObjectProperty IRI="#isHoldOf" />
+    <Class IRI="#Compartment" />
+  </ObjectPropertyRange>
+  <FunctionalDataProperty>
+    <DataProperty IRI="#hasResult" />
+  </FunctionalDataProperty>
+  <DataPropertyDomain>
+    <DataProperty IRI="#hasMaxWeight" />
+    <Class IRI="#Compartment" />
+  </DataPropertyDomain>
+  <DataPropertyDomain>
+    <DataProperty IRI="#hasResult" />
+    <Class IRI="#TailNumber" />
+  </DataPropertyDomain>
+  <DataPropertyRange>
+    <DataProperty IRI="#hasMaxWeight" />
+    <Datatype abbreviatedIRI="xsd:double" />
+  </DataPropertyRange>
+  <DataPropertyRange>
+    <DataProperty IRI="#hasResult" />
+    <Datatype abbreviatedIRI="xsd:boolean" />
+  </DataPropertyRange>
+  <DLSafeRule>
+    <Body>
+      <ObjectPropertyAtom>
+        <ObjectProperty IRI="#isHoldOf" />
+        <Variable IRI="urn:swrl:var#t" />
+        <Variable IRI="urn:swrl:var#h" />
+      </ObjectPropertyAtom>
+      <ClassAtom>
+        <Class IRI="#TailNumber" />
+        <Variable IRI="urn:swrl:var#t" />
+      </ClassAtom>
+      <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+        <Variable IRI="urn:swrl:var#mw" />
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1500</Literal>
+      </BuiltInAtom>
+      <ObjectPropertyAtom>
+        <ObjectProperty IRI="#HasLimit" />
+        <Variable IRI="urn:swrl:var#h" />
+        <Variable IRI="urn:swrl:var#mw" />
+      </ObjectPropertyAtom>
+    </Body>
+    <Head>
+      <ObjectPropertyAtom>
+        <ObjectProperty IRI="#HasResult" />
+        <Variable IRI="urn:swrl:var#t" />
+        <NamedIndividual IRI="#True" />
+      </ObjectPropertyAtom>
+    </Head>
+  </DLSafeRule>
+  <DLSafeRule>
+    <Body>
+      <ObjectPropertyAtom>
+        <ObjectProperty IRI="#isHoldOf" />
+        <Variable IRI="urn:swrl:var#t" />
+        <Variable IRI="urn:swrl:var#h" />
+      </ObjectPropertyAtom>
+      <ClassAtom>
+        <Class IRI="#TailNumber" />
+        <Variable IRI="urn:swrl:var#t" />
+      </ClassAtom>
+      <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+        <Variable IRI="urn:swrl:var#mw" />
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer"> 5000 </Literal>
+      </BuiltInAtom>
+      <ObjectPropertyAtom>
+        <ObjectProperty IRI="#HasLimit" />
+        <Variable IRI="urn:swrl:var#h" />
+        <Variable IRI="urn:swrl:var#mw" />
+      </ObjectPropertyAtom>
+    </Body>
+    <Head>
+      <ObjectPropertyAtom>
+        <ObjectProperty IRI="#HasResult" />
+        <Variable IRI="urn:swrl:var#t" />
+        <NamedIndividual IRI="#True" />
+      </ObjectPropertyAtom>
+    </Head> </DLSafeRule>
+  <DLSafeRule>
+    <Body>
+      <ObjectPropertyAtom>
+        <ObjectProperty IRI="#isHoldOf" />
+        <Variable IRI="urn:swrl:var#t" />
+        <Variable IRI="urn:swrl:var#h" />
+      </ObjectPropertyAtom>
+      <ClassAtom>
+        <Class IRI="#TailNumber" />
+        <Variable IRI="urn:swrl:var#t" />
+      </ClassAtom>
+      <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+        <Variable IRI="urn:swrl:var#mw" />
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer"> 3000 </Literal>
+      </BuiltInAtom>
+      <ObjectPropertyAtom>
+        <ObjectProperty IRI="#HasLimit" />
+        <Variable IRI="urn:swrl:var#h" />
+        <Variable IRI="urn:swrl:var#mw" />
+      </ObjectPropertyAtom>
+    </Body>
+    <Head>
+      <DataPropertyAtom>
+        <DataProperty IRI="#HasResult" />
+        <Variable IRI="urn:swrl:var#t" />
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean"> True </Literal>
+      </DataPropertyAtom>
+    </Head>
+  </DLSafeRule>
+  <DLSafeRule>
+    <Body>
+      <ObjectPropertyAtom>
+        <ObjectProperty IRI="#isHoldOf" />
+        <Variable IRI="urn:swrl:var#t" />
+        <Variable IRI="urn:swrl:var#h" />
+      </ObjectPropertyAtom>
+      <ClassAtom>
+        <Class IRI="#TailNumber" />
+        <Variable IRI="urn:swrl:var#t" />
+      </ClassAtom>
+      <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+        <Variable IRI="urn:swrl:var#mw" />
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1800</Literal>
+      </BuiltInAtom>
+      <ObjectPropertyAtom>
+        <ObjectProperty IRI="#HasLimit" />
+        <Variable IRI="urn:swrl:var#h" />
+        <Variable IRI="urn:swrl:var#mw" />
+      </ObjectPropertyAtom>
+    </Body>
+    <Head>
+      <ObjectPropertyAtom>
+        <ObjectProperty IRI="#HasResult" />
+        <Variable IRI="urn:swrl:var#t" />
+        <NamedIndividual IRI="#True" />
+      </ObjectPropertyAtom>
+    </Head>
+  </DLSafeRule>
+  <DLSafeRule>
+    <Body>
+      <ObjectPropertyAtom>
+        <ObjectProperty IRI="#isHoldOf" />
+        <Variable IRI="urn:swrl:var#t" />
+        <Variable IRI="urn:swrl:var#h" />
+      </ObjectPropertyAtom>
+      <ClassAtom>
+        <Class IRI="#TailNumber" />
+        <Variable IRI="urn:swrl:var#t" />
+      </ClassAtom>
+      <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+        <Variable IRI="urn:swrl:var#mw" />
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1900</Literal>
+      </BuiltInAtom>
+      <ObjectPropertyAtom>
+        <ObjectProperty IRI="#HasLimit" />
+        <Variable IRI="urn:swrl:var#h" />
+        <Variable IRI="urn:swrl:var#mw" />
+      </ObjectPropertyAtom>
+    </Body>
+    <Head>
+      <ObjectPropertyAtom>
+        <ObjectProperty IRI="#HasResult" />
+        <Variable IRI="urn:swrl:var#t" />
+        <NamedIndividual IRI="#True" />
+      </ObjectPropertyAtom>
+    </Head>
+  </DLSafeRule>
+  <DLSafeRule>
+    <Body>
+      <ObjectPropertyAtom>
+        <ObjectProperty IRI="#isHoldOf" />
+        <Variable IRI="urn:swrl:var#t" />
+        <Variable IRI="urn:swrl:var#h" />
+      </ObjectPropertyAtom>
+      <ClassAtom>
+        <Class IRI="#TailNumber" />
+        <Variable IRI="urn:swrl:var#t" />
+      </ClassAtom>
+      <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+        <Variable IRI="urn:swrl:var#mw" />
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2500</Literal>
+      </BuiltInAtom>
+      <ObjectPropertyAtom>
+        <ObjectProperty IRI="#HasLimit" />
+        <Variable IRI="urn:swrl:var#h" />
+        <Variable IRI="urn:swrl:var#mw" />
+      </ObjectPropertyAtom>
+    </Body>
+    <Head>
+      <ObjectPropertyAtom>
+        <ObjectProperty IRI="#HasResult" />
+        <Variable IRI="urn:swrl:var#t" />
+        <NamedIndividual IRI="#True" />
+      </ObjectPropertyAtom>
+    </Head>
+  </DLSafeRule>
+  <DLSafeRule>
+    <Body>
+      <ObjectPropertyAtom>
+        <ObjectProperty IRI="#isHoldOf" />
+        <Variable IRI="urn:swrl:var#t" />
+        <Variable IRI="urn:swrl:var#h" />
+      </ObjectPropertyAtom>
+      <ClassAtom>
+        <Class IRI="#TailNumber" />
+        <Variable IRI="urn:swrl:var#t" />
+      </ClassAtom>
+      <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+        <Variable IRI="urn:swrl:var#mw" />
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1500</Literal>
+      </BuiltInAtom>
+      <DataPropertyAtom>
+        <DataProperty IRI="#hasMaxWeight" />
+        <Variable IRI="urn:swrl:var#h" />
+        <Variable IRI="urn:swrl:var#mw" />
+      </DataPropertyAtom>
+    </Body>
+    <Head>
+      <ObjectPropertyAtom>
+        <ObjectProperty IRI="#HasResult" />
+        <Variable IRI="urn:swrl:var#t" />
+        <NamedIndividual IRI="#True" />
+      </ObjectPropertyAtom>
+    </Head>
+  </DLSafeRule>
+</Ontology>
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->

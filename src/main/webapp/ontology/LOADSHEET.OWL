@@ -1,0 +1,1058 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/med/ontologies/2019/0/untitled-ontology-3"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/med/ontologies/2019/0/untitled-ontology-3">
+    <Prefix name="" IRI="http://www.semanticweb.org/med/ontologies/2019/0/untitled-ontology-3"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AIRCRAFT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AIRCRAFT_TYPE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AIRCRAFT_WEIGHT_LIMITS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#COMPARTMENT_NUMBER"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FUEL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TAIL_NUMBER"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ZONE"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isHoldOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTypeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isZoneOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMaxWeight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#A319"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#A320"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#A321"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hold1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hold2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hold3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hold4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hold5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AGG/A321-204-ATLJET"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AGI/A321-204-ATLJET"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AGS/A321-204-ATLJET"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ATD/A319-136-ATLJET"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ATF/A321-204-ATLJET"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ATT/A320-164-ATLJET"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ETV/A321-216-ATLJET"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AIRCRAFT_TYPE"/>
+        <Class IRI="#AIRCRAFT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AIRCRAFT_WEIGHT_LIMITS"/>
+        <Class IRI="#AIRCRAFT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#COMPARTMENT_NUMBER"/>
+        <Class IRI="#AIRCRAFT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FUEL"/>
+        <Class IRI="#AIRCRAFT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TAIL_NUMBER"/>
+        <Class IRI="#AIRCRAFT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ZONE"/>
+        <Class IRI="#AIRCRAFT"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT"/>
+        <NamedIndividual IRI="#A319"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT_TYPE"/>
+        <NamedIndividual IRI="#A319"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT"/>
+        <NamedIndividual IRI="#A320"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT_TYPE"/>
+        <NamedIndividual IRI="#A320"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT"/>
+        <NamedIndividual IRI="#A321"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT_TYPE"/>
+        <NamedIndividual IRI="#A321"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT"/>
+        <NamedIndividual IRI="#Hold1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#COMPARTMENT_NUMBER"/>
+        <NamedIndividual IRI="#Hold1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT"/>
+        <NamedIndividual IRI="#Hold2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#COMPARTMENT_NUMBER"/>
+        <NamedIndividual IRI="#Hold2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT"/>
+        <NamedIndividual IRI="#Hold3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#COMPARTMENT_NUMBER"/>
+        <NamedIndividual IRI="#Hold3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT"/>
+        <NamedIndividual IRI="#Hold4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#COMPARTMENT_NUMBER"/>
+        <NamedIndividual IRI="#Hold4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT"/>
+        <NamedIndividual IRI="#Hold5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#COMPARTMENT_NUMBER"/>
+        <NamedIndividual IRI="#Hold5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT"/>
+        <NamedIndividual IRI="#OA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ZONE"/>
+        <NamedIndividual IRI="#OA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT"/>
+        <NamedIndividual IRI="#OB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ZONE"/>
+        <NamedIndividual IRI="#OB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT"/>
+        <NamedIndividual IRI="#OC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ZONE"/>
+        <NamedIndividual IRI="#OC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT"/>
+        <NamedIndividual IRI="#OD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ZONE"/>
+        <NamedIndividual IRI="#OD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT"/>
+        <NamedIndividual IRI="#OE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ZONE"/>
+        <NamedIndividual IRI="#OE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT"/>
+        <NamedIndividual IRI="#AGG/A321-204-ATLJET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT_TYPE"/>
+        <NamedIndividual IRI="#AGG/A321-204-ATLJET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#COMPARTMENT_NUMBER"/>
+        <NamedIndividual IRI="#AGG/A321-204-ATLJET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ZONE"/>
+        <NamedIndividual IRI="#AGG/A321-204-ATLJET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT"/>
+        <NamedIndividual IRI="#AGI/A321-204-ATLJET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT_TYPE"/>
+        <NamedIndividual IRI="#AGI/A321-204-ATLJET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#COMPARTMENT_NUMBER"/>
+        <NamedIndividual IRI="#AGI/A321-204-ATLJET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ZONE"/>
+        <NamedIndividual IRI="#AGI/A321-204-ATLJET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT"/>
+        <NamedIndividual IRI="#AGS/A321-204-ATLJET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT_TYPE"/>
+        <NamedIndividual IRI="#AGS/A321-204-ATLJET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#COMPARTMENT_NUMBER"/>
+        <NamedIndividual IRI="#AGS/A321-204-ATLJET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ZONE"/>
+        <NamedIndividual IRI="#AGS/A321-204-ATLJET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT"/>
+        <NamedIndividual IRI="#ATD/A319-136-ATLJET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT_TYPE"/>
+        <NamedIndividual IRI="#ATD/A319-136-ATLJET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#COMPARTMENT_NUMBER"/>
+        <NamedIndividual IRI="#ATD/A319-136-ATLJET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ZONE"/>
+        <NamedIndividual IRI="#ATD/A319-136-ATLJET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT"/>
+        <NamedIndividual IRI="#ATF/A321-204-ATLJET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT_TYPE"/>
+        <NamedIndividual IRI="#ATF/A321-204-ATLJET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#COMPARTMENT_NUMBER"/>
+        <NamedIndividual IRI="#ATF/A321-204-ATLJET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ZONE"/>
+        <NamedIndividual IRI="#ATF/A321-204-ATLJET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT"/>
+        <NamedIndividual IRI="#ATT/A320-164-ATLJET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT_TYPE"/>
+        <NamedIndividual IRI="#ATT/A320-164-ATLJET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#COMPARTMENT_NUMBER"/>
+        <NamedIndividual IRI="#ATT/A320-164-ATLJET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ZONE"/>
+        <NamedIndividual IRI="#ATT/A320-164-ATLJET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT"/>
+        <NamedIndividual IRI="#ETV/A321-216-ATLJET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIRCRAFT_TYPE"/>
+        <NamedIndividual IRI="#ETV/A321-216-ATLJET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#COMPARTMENT_NUMBER"/>
+        <NamedIndividual IRI="#ETV/A321-216-ATLJET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ZONE"/>
+        <NamedIndividual IRI="#ETV/A321-216-ATLJET"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <NamedIndividual IRI="#A319"/>
+        <NamedIndividual IRI="#ATD/A319-136-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <NamedIndividual IRI="#A321"/>
+        <NamedIndividual IRI="#AGG/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <NamedIndividual IRI="#A321"/>
+        <NamedIndividual IRI="#AGI/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <NamedIndividual IRI="#A321"/>
+        <NamedIndividual IRI="#AGS/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <NamedIndividual IRI="#A321"/>
+        <NamedIndividual IRI="#ATF/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <NamedIndividual IRI="#A321"/>
+        <NamedIndividual IRI="#ETV/A321-216-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold1"/>
+        <NamedIndividual IRI="#AGG/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold1"/>
+        <NamedIndividual IRI="#AGI/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold1"/>
+        <NamedIndividual IRI="#AGS/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold1"/>
+        <NamedIndividual IRI="#ATD/A319-136-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold1"/>
+        <NamedIndividual IRI="#ATF/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold1"/>
+        <NamedIndividual IRI="#ATT/A320-164-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold1"/>
+        <NamedIndividual IRI="#ETV/A321-216-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold2"/>
+        <NamedIndividual IRI="#AGG/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold2"/>
+        <NamedIndividual IRI="#AGI/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold2"/>
+        <NamedIndividual IRI="#AGS/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold2"/>
+        <NamedIndividual IRI="#ATD/A319-136-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold2"/>
+        <NamedIndividual IRI="#ATF/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold2"/>
+        <NamedIndividual IRI="#ATT/A320-164-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold2"/>
+        <NamedIndividual IRI="#ETV/A321-216-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold3"/>
+        <NamedIndividual IRI="#AGG/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold3"/>
+        <NamedIndividual IRI="#AGI/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold3"/>
+        <NamedIndividual IRI="#AGS/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold3"/>
+        <NamedIndividual IRI="#ATD/A319-136-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold3"/>
+        <NamedIndividual IRI="#ATF/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold3"/>
+        <NamedIndividual IRI="#ATT/A320-164-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold3"/>
+        <NamedIndividual IRI="#ETV/A321-216-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold4"/>
+        <NamedIndividual IRI="#AGG/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold4"/>
+        <NamedIndividual IRI="#AGI/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold4"/>
+        <NamedIndividual IRI="#AGS/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold4"/>
+        <NamedIndividual IRI="#ATD/A319-136-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold4"/>
+        <NamedIndividual IRI="#ATF/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold4"/>
+        <NamedIndividual IRI="#ATT/A320-164-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold4"/>
+        <NamedIndividual IRI="#ETV/A321-216-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold5"/>
+        <NamedIndividual IRI="#AGG/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold5"/>
+        <NamedIndividual IRI="#AGI/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold5"/>
+        <NamedIndividual IRI="#AGS/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold5"/>
+        <NamedIndividual IRI="#ATD/A319-136-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold5"/>
+        <NamedIndividual IRI="#ATF/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold5"/>
+        <NamedIndividual IRI="#ATT/A320-164-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <NamedIndividual IRI="#Hold5"/>
+        <NamedIndividual IRI="#ETV/A321-216-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OA"/>
+        <NamedIndividual IRI="#AGG/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OA"/>
+        <NamedIndividual IRI="#AGI/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OA"/>
+        <NamedIndividual IRI="#AGS/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OA"/>
+        <NamedIndividual IRI="#ATD/A319-136-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OA"/>
+        <NamedIndividual IRI="#ATF/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OA"/>
+        <NamedIndividual IRI="#ATT/A320-164-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OA"/>
+        <NamedIndividual IRI="#ETV/A321-216-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OB"/>
+        <NamedIndividual IRI="#AGG/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OB"/>
+        <NamedIndividual IRI="#AGI/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OB"/>
+        <NamedIndividual IRI="#AGS/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OB"/>
+        <NamedIndividual IRI="#ATD/A319-136-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OB"/>
+        <NamedIndividual IRI="#ATF/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OB"/>
+        <NamedIndividual IRI="#ATT/A320-164-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OB"/>
+        <NamedIndividual IRI="#ETV/A321-216-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OC"/>
+        <NamedIndividual IRI="#AGG/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OC"/>
+        <NamedIndividual IRI="#AGI/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OC"/>
+        <NamedIndividual IRI="#AGS/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OC"/>
+        <NamedIndividual IRI="#ATD/A319-136-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OC"/>
+        <NamedIndividual IRI="#ATF/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OC"/>
+        <NamedIndividual IRI="#ATT/A320-164-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OC"/>
+        <NamedIndividual IRI="#ETV/A321-216-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OD"/>
+        <NamedIndividual IRI="#AGG/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OD"/>
+        <NamedIndividual IRI="#AGI/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OD"/>
+        <NamedIndividual IRI="#AGS/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OD"/>
+        <NamedIndividual IRI="#ATD/A319-136-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OD"/>
+        <NamedIndividual IRI="#ATF/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OD"/>
+        <NamedIndividual IRI="#ATT/A320-164-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OD"/>
+        <NamedIndividual IRI="#ETV/A321-216-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OE"/>
+        <NamedIndividual IRI="#AGG/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OE"/>
+        <NamedIndividual IRI="#AGI/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OE"/>
+        <NamedIndividual IRI="#AGS/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OE"/>
+        <NamedIndividual IRI="#ATD/A319-136-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OE"/>
+        <NamedIndividual IRI="#ATF/A321-204-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OE"/>
+        <NamedIndividual IRI="#ATT/A320-164-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#OE"/>
+        <NamedIndividual IRI="#ETV/A321-216-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <NamedIndividual IRI="#AGG/A321-204-ATLJET"/>
+        <NamedIndividual IRI="#A321"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#AGG/A321-204-ATLJET"/>
+        <NamedIndividual IRI="#OA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#AGG/A321-204-ATLJET"/>
+        <NamedIndividual IRI="#OB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#AGG/A321-204-ATLJET"/>
+        <NamedIndividual IRI="#OC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#AGG/A321-204-ATLJET"/>
+        <NamedIndividual IRI="#OD"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#AGG/A321-204-ATLJET"/>
+        <NamedIndividual IRI="#OE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <NamedIndividual IRI="#AGI/A321-204-ATLJET"/>
+        <NamedIndividual IRI="#A321"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#AGI/A321-204-ATLJET"/>
+        <NamedIndividual IRI="#OA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#AGI/A321-204-ATLJET"/>
+        <NamedIndividual IRI="#OB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#AGI/A321-204-ATLJET"/>
+        <NamedIndividual IRI="#OC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#AGI/A321-204-ATLJET"/>
+        <NamedIndividual IRI="#OD"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#AGI/A321-204-ATLJET"/>
+        <NamedIndividual IRI="#OE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <NamedIndividual IRI="#AGS/A321-204-ATLJET"/>
+        <NamedIndividual IRI="#A321"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#AGS/A321-204-ATLJET"/>
+        <NamedIndividual IRI="#OA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#AGS/A321-204-ATLJET"/>
+        <NamedIndividual IRI="#OB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#AGS/A321-204-ATLJET"/>
+        <NamedIndividual IRI="#OC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#AGS/A321-204-ATLJET"/>
+        <NamedIndividual IRI="#OD"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#AGS/A321-204-ATLJET"/>
+        <NamedIndividual IRI="#OE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <NamedIndividual IRI="#ATD/A319-136-ATLJET"/>
+        <NamedIndividual IRI="#A319"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#ATD/A319-136-ATLJET"/>
+        <NamedIndividual IRI="#OA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#ATD/A319-136-ATLJET"/>
+        <NamedIndividual IRI="#OB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#ATD/A319-136-ATLJET"/>
+        <NamedIndividual IRI="#OC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#ATD/A319-136-ATLJET"/>
+        <NamedIndividual IRI="#OD"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#ATD/A319-136-ATLJET"/>
+        <NamedIndividual IRI="#OE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <NamedIndividual IRI="#ATF/A321-204-ATLJET"/>
+        <NamedIndividual IRI="#A321"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#ATF/A321-204-ATLJET"/>
+        <NamedIndividual IRI="#OA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#ATF/A321-204-ATLJET"/>
+        <NamedIndividual IRI="#OB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#ATF/A321-204-ATLJET"/>
+        <NamedIndividual IRI="#OC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#ATF/A321-204-ATLJET"/>
+        <NamedIndividual IRI="#OD"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#ATF/A321-204-ATLJET"/>
+        <NamedIndividual IRI="#OE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <NamedIndividual IRI="#ATT/A320-164-ATLJET"/>
+        <NamedIndividual IRI="#ATT/A320-164-ATLJET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#ATT/A320-164-ATLJET"/>
+        <NamedIndividual IRI="#OA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#ATT/A320-164-ATLJET"/>
+        <NamedIndividual IRI="#OB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#ATT/A320-164-ATLJET"/>
+        <NamedIndividual IRI="#OC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#ATT/A320-164-ATLJET"/>
+        <NamedIndividual IRI="#OD"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#ATT/A320-164-ATLJET"/>
+        <NamedIndividual IRI="#OE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <NamedIndividual IRI="#ETV/A321-216-ATLJET"/>
+        <NamedIndividual IRI="#A321"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#ETV/A321-216-ATLJET"/>
+        <NamedIndividual IRI="#OA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#ETV/A321-216-ATLJET"/>
+        <NamedIndividual IRI="#OB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#ETV/A321-216-ATLJET"/>
+        <NamedIndividual IRI="#OC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#ETV/A321-216-ATLJET"/>
+        <NamedIndividual IRI="#OD"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <NamedIndividual IRI="#ETV/A321-216-ATLJET"/>
+        <NamedIndividual IRI="#OE"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMaxWeight"/>
+        <NamedIndividual IRI="#Hold1"/>
+        <Literal>1365</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMaxWeight"/>
+        <NamedIndividual IRI="#Hold2"/>
+        <Literal>2000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMaxWeight"/>
+        <NamedIndividual IRI="#Hold3"/>
+        <Literal>2500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMaxWeight"/>
+        <NamedIndividual IRI="#Hold4"/>
+        <Literal>2300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMaxWeight"/>
+        <NamedIndividual IRI="#Hold5"/>
+        <Literal>1800</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <ObjectProperty IRI="#isTypeOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <ObjectProperty IRI="#isZoneOf"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <Class IRI="#AIRCRAFT"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <Class IRI="#AIRCRAFT"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <Class IRI="#AIRCRAFT"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <Class IRI="#AIRCRAFT"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isHoldOf"/>
+        <Class IRI="#COMPARTMENT_NUMBER"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <Class IRI="#AIRCRAFT"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <Class IRI="#AIRCRAFT_TYPE"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <Class IRI="#AIRCRAFT"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isZoneOf"/>
+        <Class IRI="#ZONE"/>
+    </ObjectPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#TAIL_NUMBER"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isHoldOf"/>
+                <Variable IRI="#t"/>
+                <Variable IRI="#h"/>
+            </ObjectPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="#weight"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1365</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+                <Variable IRI="#weight"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+

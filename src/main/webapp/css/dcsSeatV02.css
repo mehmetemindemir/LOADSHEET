@@ -1,0 +1,492 @@
+
+        .kare_popup {
+            border: 1px #999999 solid;
+            font-family: Arial;
+            font-size: 10px;
+            color: #000000;
+            background-color: #E8E8DD;
+            margin-top: 0px;
+            margin-right: 1px;
+            margin-bottom: 1px;
+            margin-left: 1px;
+            padding-top: 0px;
+            padding-right: 5px;
+            padding-bottom: 1px;
+            padding-left: 1px;
+            height: 14px;
+            text-indent: 3px;
+        }
+
+ .flightinfo {
+            height: 15px;
+            padding-left: 5px;
+            margin-left: 10px;
+            font-family: Arial;
+            font-size: 12px;
+            font-weight: bold;
+            float: left;
+            overflow: auto;
+        }
+        #seatRuler td {
+            font-family: Arial;
+            font-size: 10px;
+            color: #000000;
+            text-align: center;
+        }
+
+        #seatRuler {
+            display: table;
+            border-collapse: separate;
+            border-spacing: 2px;
+            border-color: gray;
+        }
+
+        .w60 {
+            width: 60px !important;
+        }
+        .w110 {
+            width: 110px !important;
+        }
+        .w140 {
+            width: 140px !important;
+        }
+        .w40 {
+            width: 40px !important;
+        }
+		 .w20 {
+            width: 20px !important;
+        }
+        .ml5 {
+            margin-left: 5px !important;
+        }
+         .mt4 {
+            margin-top: 4px !important;
+        }
+
+        .w200 {
+            width: 200px !important;
+        }
+
+        .w430 {
+            width: 430px !important;
+        }
+
+        .fbold {
+            font-weight: bold !important;
+        }
+
+        .fleft {
+            float: left !important;
+        }
+
+        .fright {
+            float: right !important;
+        }
+
+        .seatLeft {
+            width: 24px;
+            height: 24px;
+            background-image: url('img/leftArrow.png');
+        }
+
+        .seatLeftDi {
+            width: 24px;
+            height: 24px;
+            background-image: url('img/leftArrowDi.png');
+        }
+
+        .seatRight {
+            width: 24px;
+            height: 24px;
+            background-image: url('img/rightArrow.png');
+            cursor: pointer;
+        }
+
+        .seatRightDi {
+            width: 24px;
+            height: 24px;
+            background-image: url('img/rightArrowDi.png');
+            cursor: default;
+        }
+        
+        
+
+/* Check - in  */
+/* Check - in  */
+
+.globalBox .planeBody {
+    width: 100%;
+    height: 1800px;
+    background-position: 51% 0;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+    .globalBox .planeBody .seatContainer {
+        width: 133px;
+        padding: 3px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 280px;
+    }
+
+        .globalBox .planeBody .seatContainer ul li {
+            float: right;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+.sira {
+    float: left;
+    width: 18px;
+    height: 150px;
+    margin-left: 5px;
+}
+
+.business {
+    background-color: #99f9ef !important;
+}
+.airCol {
+    cursor: pointer;
+    width: 25px;
+    height: 4px;
+}
+
+.wings {
+    background-color:#7a8387;
+}
+.airColH {
+   cursor: pointer;
+	width: 5px;
+	height: 22px;
+	float: left;
+	margin: 2px;
+}
+
+.wingsH {
+    background-color:#7a8387;
+}
+.seat {
+    cursor: pointer;
+    width: 19px;
+    height: 19px;
+    float: left;
+    font-family: arial;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hol {
+    cursor: pointer;
+    width: 19px;
+    height: 19px;
+    float: left;
+}
+.jump {
+     background: url("img/seats.png?v=0.2") no-repeat scroll -82px 2px transparent;
+    cursor: pointer;
+    width: 19px;
+    height: 19px;
+    padding:2px;
+}
+.standby{
+   background: url("img/seats.png?v=0.2") no-repeat scroll -145px 2px transparent;
+    cursor: pointer;
+    width: 19px;
+    height: 19px;
+    padding:2px;
+}
+.empty {
+    cursor: pointer;
+    width: 19px;
+    height: 19px;
+    padding:2px;
+}
+
+.selected {
+   /* background: url('img/seat_selected.jpg') no-repeat;*/
+    background: url("img/seats.png?v=0.2") no-repeat scroll -124px 2px transparent;
+    cursor: pointer;
+    width: 19px;
+    height: 19px;
+    padding:2px;
+}
+.rez {
+   background: url("img/seats.png?v=0.2") no-repeat scroll -103px 2px transparent;
+    cursor: pointer;
+    width: 19px;
+    height: 19px;
+    padding:2px;
+}
+
+.inf {
+   background: url("img/seats.png?v=0.2") no-repeat scroll -61px 2px transparent;
+    cursor: pointer;
+    width: 19px;
+    height: 19px;
+    padding:2px;
+}
+.elite {
+    background: url("img/seats.png?v=0.2") no-repeat scroll 2px 2px transparent;
+    cursor: pointer;
+    width: 19px;
+    height: 19px;
+    padding:2px;
+}
+.full {
+    background: url("img/seats.png?v=0.2") no-repeat scroll -40px 2px transparent;
+    width: 21px;
+    height: 21px;
+    padding:2px;
+}
+
+.free {
+   background: url("img/seats.png?v=0.2") no-repeat scroll -19px 2px transparent;
+    cursor: pointer;
+    width: 21px;
+    height: 21px;
+    padding:2px;
+}
+
+.disabledSeat {
+    background: url("img/seats.png?v=0.2") no-repeat scroll -166px 2px transparent;
+    width: 21px;
+    height: 21px;
+    padding:2px;
+}
+
+.exitLeft {
+    width: 21px;
+    background: url('img/exit_left.jpg') no-repeat left 2px;
+    height: 30px;
+    margin: 0 5px 0 5px;
+}
+
+.exitRight {
+    width: 21px;
+    background: url('img/exit_right.jpg') no-repeat right 2px;
+    height: 123px;
+    margin: 0 5px 0 5px;
+}
+
+.siraExit {
+    width: 30px;
+    height: 168px;
+    float: left;
+    position: relative;
+}
+
+.word {
+    cursor: pointer;
+    width: 21px;
+    height: 21px;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    padding:1px;
+}
+
+.checkInSeatGraph {
+    margin-left: auto;
+    margin-right: auto;
+    width: 390px;
+    height: 40px;
+    padding-top: 20px;
+}
+
+    .checkInSeatGraph li {
+        float: left;
+        margin-right: 5px;
+        font-weight: normal;
+        }
+
+.sira2 {
+    float: left;
+    height: 22px;
+    margin-left: 5px;
+    width: 220px;
+}
+
+
+
+.sira2Exit {
+    width: 165px;
+    height: 20px;
+    float: left;
+    margin-left:5px;
+    position: relative;
+}
+
+.word2 {
+    cursor: pointer;
+   width: 21px;
+    height: 21px;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    text-align:center;
+    padding:1px;
+}
+
+.exitLeftH {
+    width: 126px;
+    background: url('img/exit_leftH.jpg') no-repeat left 2px;
+    height: 21px;
+    float: left;
+}
+
+.exitRightH {
+    width: 19px;
+    background: url('img/exit_rightH.jpg') no-repeat right 2px;
+    height: 21px;
+    float: left;
+}
+
+.businessH {
+    background-color: #99f9ef !important;
+}
+
+
+
+.hol {
+    cursor: pointer;
+   width: 21px;
+    height: 21px;
+    float: left;
+}
+.jumpH {
+     background: url("img/seatsH.png?v=0.2") no-repeat scroll 2px -82px transparent;
+    cursor: pointer;
+   width: 21px;
+    height: 21px;
+    padding:2px;
+}
+.standbyH{
+   background: url("img/seatsH.png?v=0.2") no-repeat scroll 2px -145px transparent;
+    cursor: pointer;
+   width: 21px;
+    height: 21px;
+    padding:2px;
+}
+.emptyH {
+    cursor: pointer;
+  width: 21px;
+    height: 21px;
+    padding:2px;
+}
+
+.selectedH {
+   /* background: url('img/seat_selected.jpg') no-repeat;*/
+    background: url("img/seatsH.png?v=0.2") no-repeat scroll 0px -124px transparent;
+    cursor: pointer;
+   	width: 21px;
+    height: 21px;
+    padding:2px;
+}
+.rezH {
+   background: url("img/seatsH.png?v=0.2") no-repeat scroll 0px -103px transparent;
+    cursor: pointer;
+	width: 21px;
+    height: 21px;
+    padding:2px;
+}
+
+.infH {
+   background: url("img/seatsH.png?v=0.2") no-repeat scroll 0px -61px transparent;
+    cursor: pointer;
+    width: 21px;
+    height: 21px;
+    padding:2px;
+}
+.infFreeH {
+   background: url("img/seatsH.png?v=0.2") no-repeat scroll 0px -188px transparent;
+    cursor: pointer;
+    width: 21px;
+    height: 21px;
+    padding:2px;
+}
+.infBlockH {
+   background: url("img/seatsH.png?v=0.2") no-repeat scroll 0px -167px transparent;
+    cursor: pointer;
+    width: 21px;
+    height: 21px;
+    padding:2px;
+}
+.eliteH {
+    background: url("img/seatsH.png?v=0.2") no-repeat scroll 0px 2px transparent;
+    cursor: pointer;
+    width: 21px;
+    height: 21px;
+    padding:2px;
+}
+.fullH {
+    background: url("img/seatsH.png?v=0.2") no-repeat scroll 0px -40px transparent;
+   width: 21px;
+    height: 21px;
+    padding:2px;
+}
+
+.freeH {
+   background: url("img/seatsH.png?v=0.2") no-repeat scroll 0px -19px transparent;
+    cursor: pointer;
+   width: 21px;
+    height: 21px;
+    padding:2px;
+}
+
+.disabledH {
+    background: url("img/seatsH.png?v=0.2") no-repeat scroll 0px -277px transparent;
+   width: 21px;
+    height: 21px;
+    padding:2px;
+}
+
+.disabledUMH {
+    background: url("img/seatsH.png?v=0.2") no-repeat scroll 0px -255px transparent;
+   width: 21px;
+    height: 21px;
+    padding:2px;
+}
+.freeUMH {
+    background: url("img/seatsH.png?v=0.2") no-repeat scroll 0px -211px transparent;
+   width: 21px;
+    height: 21px;
+    padding:2px;
+}
+.freeWCHRH {
+     background: url("img/seatsH.png?v=0.2") no-repeat scroll 0px -233px transparent;
+   width: 21px;
+    height: 21px;
+    padding:2px;
+}
+.disabledWCHRH {
+   
+     background: url("img/seatsH.png?v=0.2") no-repeat scroll 0px -299px transparent;
+   width: 21px;
+    height: 21px;
+    padding:2px;
+}
+
+
+.zoneA{
+	color:red !important;
+}
+.zoneB{
+	color:blue !important;
+}
+.zoneC{
+	color:black !important;
+}
+.zoneD{
+	color:green !important;
+}
+.zoneE{
+}
+.bgNoRepeat{
+	background-repeat: no-repeat !important;
+}
+.selectedConfigSeat{
+	height: 28px; border-bottom:5px solid red;
+}
